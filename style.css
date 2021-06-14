@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  margin: auto 0px auto 0px;
+  justify-content: center;
+}
+
+.shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(./loading.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.content {
+  border: solid 1px black;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.formNewSite {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.lableMax {
+  width: 100%;
+}
+
+.inputMaxSite {
+  width: 100%;
+}
+
+.lableMin {
+  width: 100%;
+}
+.textMinSite {
+  text-align: center;
+  width: min-content;
+}
+.inputMinSite {
+  width: 50%;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+.btnAdd {
+  width: 50%;
+}
+.btnClear {
+  width: 50%;
+}
+
+.resultTable {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.link{
+  margin-top: 10px;
+  display: flex;
+}
+.linkMinSite {
+  width: 70%;
+}
+
+.resultHeaderLinks {
+  width: 60%;
+}
+.resultHeaderCounter {
+  text-align: center;
+  width: 30%;
+}
+.linksList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.counter {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  width: 30%;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="shadow">
+      <article class="content">
+        <form action="#" method="POST" class="formNewSite">
+            <label for="maxSite" class="lableMax">Полная ссылка</label>
+            <input type="text" name="maxSite" id="maxSite" class="input inputMaxSite dis" placeholder="Вставте ссылку"/>
+            <label for="minSite" class="lableMin">Короткая ссылка</label>
+            <p class="textMinSite">minSite.com/</p>
+            <input type="text" name="maxSite" id="minSite" class="input inputMinSite dis"/>
+            <button type="button" class="btnAdd dis">Добавить</button>
+            <button type="reset" class="btnClear dis">Очистить</button>
+      </form>
+        <article class="resultTable">
+          <h3 class="resultHeaderLinks">Ссылки:</h3>
+          <h3 class="resultHeaderCounter">Счетчик</h2>
+            <article class="linksList">
+            </article>
+        </article>
+      </article>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
