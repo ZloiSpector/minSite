@@ -131,15 +131,13 @@ const inputMaxSite = document.querySelector("#maxSite"),
 
 inputMaxSite.addEventListener("input", () => {
   inputMinSite.value = getMinSite(inputMaxSite.value);
-  counter.textContent = "0";
 });
 
 btnAdd.addEventListener("click", () => {
   let copy = testCopy();
-  if (!copy) {
-    alert("Данная короткая ссылка уже присутствует в списке или поля не заполнены!");
-  }
-  if (inputMaxSite != "" && inputMinSite != "" && copy) {
+  console.log(copy);
+  if (inputMaxSite.value != "" && inputMinSite.value != ""
+   && inputMinSite.value != "Неверная ссылка" && copy) {
     let newSite = {
       maxSite: inputMaxSite.value,
       minSite: `minSite.com/${inputMinSite.value}`,
@@ -147,6 +145,8 @@ btnAdd.addEventListener("click", () => {
     };
     disabled();
     createSite2(newSite);
+  } else {
+    alert("Данная короткая ссылка уже присутствует в списке или поля не заполнены!");
   }
 });
 
