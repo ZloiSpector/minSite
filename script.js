@@ -135,7 +135,6 @@ inputMaxSite.addEventListener("input", () => {
 
 btnAdd.addEventListener("click", () => {
   let copy = testCopy();
-  console.log(copy);
   if (inputMaxSite.value != "" && inputMinSite.value != ""
    && inputMinSite.value != "Неверная ссылка" && copy) {
     let newSite = {
@@ -155,7 +154,6 @@ function testCopy() {
   for (let i = 0; i < linksArray.length; i++) {
     array.unshift(linksArray[i].minSite);
   }
-  console.log(array);
   if (array.length == 0) {
     return true;
   } else {
